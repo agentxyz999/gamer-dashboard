@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+:root {
+  --bg-main-clr: #65dfc9, #6cdbeb;
+  --bg-clr-transparent: rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+h2 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 0.7rem;
+}
+h3,
+h4 {
+  color: #658ec6;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, var(--bg-main-clr));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*container */
+.container {
+  background: white;
+  display: flex;
+  width: 60%;
+  min-height: 80vh;
+  background: linear-gradient(to right bottom, var(--bg-clr-transparent));
+  border-radius: 1.3rem;
+  backdrop-filter: blur(0.4rem);
+  z-index: 2;
+}
+/* Dashboard and profile sections */
+.dashboard {
+  /* flex 1 to take only its space */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(to right bottom, var(--bg-clr-transparent));
+  border-radius: 1.3rem;
+}
+.dashboard .profile img {
+  width: 4rem;
+}
+.dashboard .link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.6rem;
+}
+.dashboard .link h3 {
+  padding: 0 2rem;
+}
+.dashboard .cta {
+  background: linear-gradient(to right top, var(--bg-main-clr));
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  position: relative;
+}
+.dashboard .cta img {
+  position: absolute;
+  top: -10%;
+}
+.dashboard .cta h4 {
+  width: 40%;
+  color: #ffffcc;
+}
+
+/* Games section */
+.games {
+  /* flex 2 to take the remaining space */
+  flex: 2;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+}
+.blob1 {
+  left: 10%;
+  bottom: 3%;
+}
+.blob2 {
+  right: 10%;
+  top: 3%;
+}
