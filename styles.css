@@ -69,7 +69,8 @@ main {
   border-radius: 1.3rem;
 }
 .dashboard .profile img {
-  width: 4rem;
+  width: 5rem;
+  border-radius: 2rem;
 }
 .dashboard .link {
   display: flex;
@@ -105,6 +106,7 @@ main {
   display: flex;
   margin: 3rem 5rem;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .status input {
   background: linear-gradient(to right, var(--bg-clr-transparent));
@@ -165,10 +167,10 @@ main {
   z-index: 1;
 }
 .blob1 {
-  left: 10%;
+  left: 14%;
   bottom: 3%;
 }
 .blob2 {
-  right: 10%;
+  right: 15%;
   top: 3%;
 }
